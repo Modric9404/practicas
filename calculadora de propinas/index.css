@@ -1,0 +1,225 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgb(197,228,231);
+}
+
+#box{
+ display: block;
+ margin: 0px auto;
+ margin-top: 120px;
+ width: 1100px;
+ height: 600px;
+ border-radius: 30px;
+ background-color: rgb(255,255,255);
+}
+.card{
+    display: block;
+    width: 42.5%;
+    margin: 35px;
+    height: 500px;
+    border-radius: 30px;
+    padding: 15px;
+}
+.left{
+    float: left;
+    background-color: rgb(255,255,255);
+    margin-right: 0px;
+    padding-left: 25px;
+
+}
+.right{
+float: right;
+background-color: rgb(0,71,75);
+margin-left: 0px;
+}
+.left .titles{
+font-family: 'Space Mono', monospace;
+font-size: 20px;
+color: rgb(103,116,116);
+clear: both;
+}
+
+.field{
+margin-top: 10px;
+border: none;
+border-radius: 5px;
+width: 90%;
+padding: 5px;
+font-size: 35px;
+text-align: end;
+font-family: 'Space Mono', monospace;
+color: rgb(154,169,172);
+background-color: rgb(243,248,251);
+transition: all 300ms;
+border: solid 2px rgb(243,248,251);
+}
+.field:focus{
+    color: rgb(0,71,75);
+    outline-color: rgb(92,169,160);
+    outline-width: thick;
+    caret-color: rgb(92,169,160);
+}
+.icon{
+    display: block;
+    position: absolute;
+    height: 23px;
+    padding-top: 31px;
+    padding-left: 20px;
+}
+.title-margin{
+margin-top: 50px;
+}
+.title-margin-bottom{
+margin-bottom: 20px;
+}
+.tip-container{
+display: block;
+background-color: rgb(0,71,75);
+width: 29%;
+margin: 10px;
+float: left;
+border-radius: 6px;
+margin-bottom: 30px;
+}
+.for-tip{
+margin: 0px;
+display: block;
+padding: 10px;
+text-align: center;
+font-size: 30px;
+border-radius: 6px;
+color: white;
+font-family: 'Space Mono', monospace;
+}
+.custom-tip::placeholder{
+    color: rgb(103,116,116);
+}
+
+.custom-tip{
+display: block;
+border: none;
+padding-top: 10px;
+padding-bottom: 10px;
+font-family: 'Space Mono', monospace;
+font-size: 30px;
+text-align: center;
+border-radius: 6px;
+width: 100%;
+background-color: rgb(243,248,251);
+color: rgb(103,116,116);
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
+.field:hover {
+    border: solid 2px rgb(92,169,160);
+    color: rgb(0,71,75);
+}
+.custom-tip:focus {
+    color: rgb(0,71,75);
+    outline-color: rgb(92,169,160);
+    outline-width: thick;
+    caret-color: rgb(92,169,160);
+}
+.custom-tip:hover{
+    color: rgb(0,71,75);
+}
+input[type="radio"]{
+    display: none;
+    }
+input:checked + label {
+    background-color: rgb(38,194,173);
+    color: rgb(0,71,75);
+  }
+#q5:checked + label , #q50:checked + label, #q15:checked + label{
+    background-color: rgb(159,232,223);
+    color: rgb(0,71,75);
+  }
+
+
+.total-left , .total-right{
+display: block;
+width: 20%;
+}
+.total-left{
+    float: left;
+    clear: both;
+    margin-left: 30px;
+    margin-top: 60px;
+}
+.total-right{
+    float: right;
+    width: 60%;
+    text-align: start;
+    margin-right: 30px;
+    margin-top: 60px;
+}
+.buton-reset{
+    clear: both;
+display: block;
+margin-top: 400px;
+}
+
+
+.reset{
+    width: 83%;
+    display: block;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 27px;
+    text-align: center;
+    margin: 0px auto;
+    border: none;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(159,232,223);
+    color: rgb(0,73,70);
+}
+.reset{
+    transition: all 500ms;
+    opacity: .2;
+    transition: all .3s;
+}
+.reset:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.title-price{
+color: aliceblue;
+font-size: 20px;
+font-weight: bolder;
+font-family: 'Space Mono', monospace;
+}
+
+
+.subtitle-price{
+    color: rgb(154,169,172);
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Space Mono', monospace;
+}
+.money{
+font-size: 55px;
+color: rgb(32,192,168);
+font-weight: bolder;
+font-family: 'Space Mono', monospace;
+margin-top: -15px;
+}
+.advertence{
+    display: block;
+    float: right;
+    margin-top: -25px;
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    color: rgb(243, 100, 98);
+    display: none;
+  }
+
+
+
+

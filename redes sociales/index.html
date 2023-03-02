@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+</head>
+<body class="dm-RGB(29,32,41)" id="body">
+
+<div class="header-bar " id="dm-header" >
+ 
+<div class="center">  
+  
+<div class="title Inter left dm-white">Social Media Dashboard</div>
+ 
+<div class="subtitle Inter left clear bm-gray">Total Followers: 23,004</div>
+
+<div class="right"><input type="checkbox" id="mode"  value="#"><span class="mode Inter   bm-gray">Dark mode</span><label onclick="onOff()" for="mode" class="on-off"><div  id="move" class="circle bm-bg-black"></div></label></div>
+</div>
+
+</div>
+
+  
+
+<div class="stats">
+
+
+<div class="card-stats dm-cards">
+  
+  <div class="line face"></div>
+  
+  <div class="social-user Inter bm-gray"><img class="img" src="images/icon-facebook.svg" alt="">@nathanf</div>
+
+  <div class="quantity Inter dm-white">1987</div>
+
+  <div class="followers Inter bm-gray">Followers</div>
+
+  <div class="totally-stats Inter green" ><img class="up totally-guide" src="images/icon-up.svg" alt="">12 Today</div>
+
+</div>
+
+
+<div class="card-stats  dm-cards">
+    
+  <div class="line twit"></div>
+  
+  <div class="social-user Inter bm-gray"><img class="img" src="images/icon-twitter.svg" alt="">@nathanf</div>
+
+  <div class="quantity Inter dm-white">1044</div>
+
+  <div class="followers Inter bm-gray">Followers</div>
+
+  <div class="totally-stats Inter green"><img class="up totally-guide" src="images/icon-up.svg" alt="">99 Today</div>
+
+</div>
+
+
+<div class="card-stats ig dm-cards">
+  
+  <div class="line ig"></div>
+
+  <div class="social-user Inter bm-gray"><img class="img" src="images/icon-instagram.svg" alt="">@realnathanf</div>
+
+  <div class="quantity Inter dm-white">11k</div>
+
+  <div class="followers Inter bm-gray">Followers</div>
+
+  <div class="totally-stats Inter green"><img class="up totally-guide" src="images/icon-up.svg" alt="">1099 Today</div>
+
+</div>
+
+
+<div class="card-stats stats-last  dm-cards">
+    
+  <div class="line yt"></div>
+  
+  <div class="social-user Inter bm-gray"><img class="img" src="images/icon-youtube.svg" alt="">Nathan F.</div>
+
+  <div class="quantity Inter dm-white">8239</div>
+
+  <div class="followers Inter bm-gray">Subscribers</div>
+
+  <div class="totally-stats Inter red"><img class="down totally-guide" src="images/icon-down.svg" alt="">144 Today</div>
+
+</div>
+
+
+</div>
+
+
+<div class="daily-stats clear">
+
+<div class="title gray Inter dm-white">Overview - Today</div>
+
+
+
+
+<div class="dayli-card dm-cards">
+
+  <div class="card-title Inter bm-gray">Page Views <img class="img img-right" src="images/icon-facebook.svg" alt=""></div>
+
+  <div class="number Inter dm-white">87</div>
+  
+  <div class="percentage Inter red" ><img class="down totally-guide" src="images/icon-down.svg" alt="">3%</div>
+
+</div>
+
+
+<div class="dayli-card dm-cards">
+  
+  <div class="card-title Inter bm-gray">Likes <img class="img img-right" src="images/icon-facebook.svg" alt=""></div>
+
+  <div class="number Inter dm-white">52</div>
+
+  <div class="percentage Inter red"><img class="down totally-guide" src="images/icon-down.svg" alt="">2%</div>
+
+</div>
+
+
+<div class="dayli-card dm-cards">
+  
+  <div class="card-title Inter bm-gray">Likes <img class="img img-right" src="images/icon-instagram.svg" alt=""></div>
+
+  <div class="number Inter dm-white">5462</div>
+
+  <div class="percentage Inter green"><img class="down totally-guide" src="images/icon-up.svg" alt="">2257%</div>
+
+</div>
+
+
+<div class="dayli-card last-day dm-cards">
+  
+  <div class="card-title Inter bm-gray">Profile Views <img class="img img-right" src="images/icon-instagram.svg" alt=""></div>
+
+  <div class="number Inter dm-white">52k</div>
+
+  <div class="percentage Inter green"><img class="down totally-guide" src="images/icon-up.svg" alt="">1375%</div>
+
+</div>
+
+
+<div class="dayli-card dm-cards">
+  
+  <div class="card-title Inter bm-gray">Retweets <img class="img img-right" src="images/icon-twitter.svg" alt=""></div>
+
+  <div class="number Inter dm-white">117</div>
+
+  <div class="percentage Inter green"><img class="down totally-guide" src="images/icon-up.svg" alt="">303%</div>
+
+</div>
+
+
+<div class="dayli-card dm-cards">
+  
+  <div class="card-title Inter bm-gray">Likes <img class="img img-right" src="images/icon-twitter.svg" alt=""></div>
+
+  <div class="number Inter dm-white">507</div>
+
+  <div class="percentage Inter green"><img class="down totally-guide" src="images/icon-up.svg" alt="">553%</div>
+
+</div>
+
+
+<div class="dayli-card dm-cards">
+  
+  <div class="card-title Inter bm-gray">Likes<img class="img img-right" src="images/icon-youtube.svg" alt=""></div>
+
+  <div class="number Inter dm-white">107</div>
+
+  <div class="percentage Inter red"><img class="down totally-guide" src="images/icon-down.svg" alt="">19%</div>
+
+</div>
+
+
+<div class="dayli-card last-day dm-cards">
+  
+  <div class="card-title Inter bm-gray">Total Views <img class="img img-right" src="images/icon-youtube.svg" alt=""></div>
+
+  <div class="number Inter dm-white">1407</div>
+
+  <div class="percentage Inter red"><img class="down totally-guide" src="images/icon-down.svg" alt="">12%</div>
+
+</div>
+
+
+
+</div>
+  
+  <script src="index.js">
+
+  </script>
+
+</body>
+</html>

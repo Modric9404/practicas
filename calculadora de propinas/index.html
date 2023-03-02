@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+ 
+</head>
+<body>
+ <div id="box">
+
+
+  <div class="card left">
+
+    <div class="titles">Bill</div>    <div class="advertence title-margin">Can't be zero</div> 
+    <img src="images/icon-dollar.svg" alt="" class="icon" id="dollar">
+    <input type="number" class="field count error " id="bill" step="0.01" value="0" oninput="calculate()" onfocus="clean()">
+
+    <div class="titles title-margin title-margin-bottom">Select Tip %</div> 
+
+<div class="tip-container">
+  <input type="radio" class="tip tipa" id="q5" name="tip-amount" value="5" step="0.001" name="check" onclick="calculate()">
+  <label for="q5" id="q5" class="for-tip ">5%</label> 
+</div>
+
+<div class="tip-container">
+<input type="radio" class="tip tipa" id="q10" name="tip-amount" value="10" step="0.001" name="check" onclick="calculate()">
+<label for="q10" id="q10" class="for-tip">10%</label>
+</div>
+
+<div class="tip-container">
+<input type="radio" class="tip tipa " id="q15" name="tip-amount" value="15" step="0.001" name="check"   onclick="calculate()">
+<label for="q15" id="q15" class="for-tip">15%</label>
+</div>
+
+<div class="tip-container">
+<input type="radio" class="tip tipa" id="q25" name="tip-amount" value="25" step="0.001" name="check" onclick="calculate()">
+<label for="q25" id="q25" class="for-tip">25%</label>
+</div>
+
+<div class="tip-container">
+<input type="radio" class="tip tipa" id="q50" name="tip-amount"  value="50" step="0.001" name="check" onclick="calculate()" >
+<label for="q50" id="q50" class="for-tip" >50%</label>
+</div>
+
+<div class="tip-container">
+<input type="radio" class="tip tipa" id="q100" name="tip-amount"  value="100" step="0.001" name="check" onclick="calculate()" >
+<label for="q100" id="q100" class="for-tip" >100%</label>
+</div>
+
+    
+
+  
+    <div class="titles title-margin">Number of People</div>    <div class="advertence title-margin">Can't be zero</div> 
+    <img src="images/icon-person.svg" alt="" class="icon" id="people">
+    <input type="number" class="field people error" id="peoples" step="0.01" value="0" oninput="calculate()" onfocus="cleane()">
+  </div>
+
+
+
+
+  <div class="card right">
+    
+<div class="total-left">
+  <div class="title-price">Tip Amount</div>
+  <div class="subtitle-price">/ person</div>
+</div>
+
+<div class="total-right">
+  <div class="money" id="total-tip">$<span id="totallytip">0.00</sapn></div>
+</div>
+
+
+
+<div class="total-left">
+  <div class="title-price">Total</div>
+  <div class="subtitle-price">/ person</div>
+</div>
+
+<div class="total-right">
+  <div class="money" id="total-person">$<span id="totallycost">0.00</span></div>
+</div>
+
+<div class="total-left" >
+  <div class="title-price">Total:</div>
+</div>
+
+<div class="total-right">
+  <div  class="money" style="color: white; font-size:35px; margin-left: 95px;" id="total-person">$<span id="dove">0.00</span></div>
+</div>
+
+
+
+<div class="buton-reset">
+  <input type="buton" value="RESET" id="id" name="reset" class="reset" onclick="reset()">
+</div>
+
+
+
+  </div>
+  
+<script src="index.js">
+
+</script>
+
+
+ </div>
+</body>
+</html>

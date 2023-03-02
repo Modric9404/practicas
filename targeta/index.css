@@ -1,0 +1,223 @@
+*{
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 0px;
+    margin: 0px auto;
+    font-weight: 500;
+}
+body{
+    background-color: RGB(14,14,14);
+}
+#body{
+    display: block;
+    height: 900px;
+    width: 1400px;
+    background: linear-gradient(to right, rgb(255, 255, 255) , rgb(255, 255, 255) );
+}
+#background{
+    display: block;
+    float: left;
+    z-index: 0;
+}
+#card{
+    display: block;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 170px;
+}
+#info-card-front{
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 220px;
+    margin-left: 24px;
+    margin-top: -237px;
+}
+#logo{
+    display: block;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#number-card{
+clear: both;
+display: block;
+margin-top: 125px;
+font-size: 30px;
+color: aliceblue;
+margin-left: 10px;
+margin-bottom: 20px;
+}
+#name-card{
+display: block;
+float: left;
+color: aliceblue;
+margin-left: 10px;
+font-size: 15px;
+letter-spacing: 2px;
+font-style: italic;
+}
+#date-card{
+display: block;
+float: right;
+color: aliceblue;
+margin-right: 18px;
+font-size: 14px;
+letter-spacing: 2px;
+}
+#card-back{
+    display: block;
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 270px;
+}
+#card-key{
+    display: block;
+    margin-top: -139px;
+    margin-left: 355px;
+    color: aliceblue;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+.container{
+    display: block;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    margin-left: 830px;
+    margin-top: 260px;
+}
+.tittles{
+color: RGB(62,54,67);
+display: block;
+text-transform: uppercase;
+font-size: 12px;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 90%;
+letter-spacing: 2px;
+font-weight: 700;
+margin-left: 0px;
+}
+.field{
+font-size: 17px;
+padding: 10px;
+border: none;
+border-radius: 5px;
+border: 2px solid rgb(226,226,226);
+outline-color: rgb(143, 133, 190);
+caret-color:  rgb(48, 45, 62);
+
+}
+.left{
+    float: left;
+    width: 40%;
+    margin-top: 20px;
+}
+.right{
+    width: 55%;
+    float: right;
+    margin-top: 20px;
+}
+.long-field{
+    width: 85%;
+    margin-bottom: 15px;
+}
+.cut-field{
+    margin-bottom: 50px;
+    padding-left: 15px;
+    width: 30%;
+}
+.medium-field{
+    margin-bottom: 50px;
+    width: 73%;
+}
+.button{
+    display: block;
+    clear: both;
+    width: 91%;
+    background-color:rgb(34,9,48);
+    color: aliceblue;
+    margin-left: 0px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.advice{
+    font-size: 12px;
+    color: rgb(253, 117, 117);
+}
+.dates{
+    position: absolute;
+    margin-top: -45px;
+    display: none;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
+#number{
+    color: aliceblue;
+    caret-color:  aliceblue;
+}
+.parch{
+    position: absolute;
+    margin-top: -49px;
+    margin-left: 15px;
+    font-size: 17px;
+}
+/*end-screen*/
+#start{
+    display: block;
+}
+#end{
+display: none;
+text-align: center;
+margin-left: 810px;
+margin-top: 270px;
+opacity: 0;
+transition: all 500ms;
+}
+
+#complete{
+    margin-top: 70px;
+}
+#end-title{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(34,9,48);
+    margin: 20px;
+}
+
+#end-subtitle{
+font-weight: 550;
+margin-top: 10px;
+margin-bottom: 30px;
+letter-spacing: 1px;
+color: rgba(143, 143, 143, 0.8);
+}
+
+#finally{
+    margin-left: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

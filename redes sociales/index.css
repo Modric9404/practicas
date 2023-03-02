@@ -1,0 +1,273 @@
+*{
+padding: 0px;
+margin: 0px;
+}
+body{
+    background-color: rgb(255,255,255);
+}
+.dm-white{
+    transition: all 300ms !important;
+
+}
+.header-bar{
+display: block;
+height: 260px;
+width: 100%;
+background-color: rgb(248,249,254);
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+transition: all 300ms;
+}
+.Inter{
+    font-family: 'Inter', sans-serif;
+    color: rgb(28,31,38);
+    font-weight: bolder;
+}
+.center{
+    display: block;
+    width: 1250px;
+    margin: 0px auto;
+    padding-top: 50px;
+}
+.title{
+display: block;
+font-size: 30px;
+font-weight: 900;
+}
+.subtitle{
+display: block;
+font-size: 15px;
+font-weight: 900;
+color: rgb(101,105,118);
+}
+.left{
+float: left;
+}
+.right{
+float: right;
+width: 15%;
+margin-top: -25px;
+}
+.mode{
+    font-size: 17px;
+    font-weight: bolder;
+    color: rgb(101,105,118);
+    padding-left: 40px;
+    padding-top: 3px;  
+}
+#mode{
+   display: none;
+    }
+/*input:checked + label */
+.on-off{
+    display: block;
+    float: right;
+    height: 28px;
+    width: 50px;
+    border-radius: 50px;
+    background: linear-gradient(to right, rgb(69,149,209), rgb(79,199,145));
+    padding-top: 0px;
+    margin-top: -2px;
+}
+.circle{
+    display: block;
+    height: 22px;
+    width: 22px;
+    border-radius: 100px;
+    background-color: aliceblue;
+    margin-top: 3px;
+    margin-left: 3px;
+    transition: all 300ms;
+    
+    }
+.clear{
+    clear: both;
+}
+.stats , .daily-stats{
+    display: block;
+    width: 1250px;
+    margin: 0px auto;
+}
+.stats .card-stats{
+    display: block;
+    float: left;
+    margin-right:56.6px;
+    background-color: rgb(240,243,250);
+    height: 230px;
+    width: 270px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 500ms;
+}
+.card-stats:hover{
+    background-color: rgb(225,227,240);
+}
+
+.stats-last{
+margin-right: 0px !important;
+}
+
+.stats{
+height: 230px;
+margin-top: -110px;
+}
+.line{
+    display: block;
+    width: 270px;
+    height: 6px;
+    background: linear-gradient(to right, rgb(253,190,105), rgb(228,75,149)) !important;
+}
+.face{
+    background:rgb(23,143,245) !important;
+}
+.twit{
+    background:rgb(28,161,243) !important;
+}
+.ig{
+border: none !important;
+}
+
+.yt{
+    background:rgb(196,3,44) !important;
+}
+.social-user,.quantity,.followers,.totally-stats{
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.social-user{
+margin-top: 30px;
+margin-bottom: 30px ;
+color:rgb(103,106,121) ;
+font-size: 13px;
+}
+.img{
+    margin-bottom: -4px;
+    padding-right: 10px;
+}
+.quantity {
+font-size: 60px;
+margin-top: -10px;
+}
+.followers{
+text-transform: uppercase;
+font-weight: 100;
+letter-spacing: 5px;
+font-size: 13px;
+color:rgb(103,106,121) ;
+}
+.totally-stats{
+display: block;
+margin-top: 25px;
+font-size: 13px;
+font-weight: bolder;
+}
+
+.red{
+    color: rgb(209,90,106);
+}
+.green{
+    color: rgb(110,188,169);
+}
+.gray{
+    color:rgb(103,106,121);
+    font-size: 27px;
+}
+.totally-guide{
+   position: absolute;
+   margin-top: 5px;
+   margin-left: -17px;
+   height: 6px;
+}
+
+
+.daily-stats{
+    display: block;
+    height: 400px;
+    margin-top: 50px;
+}
+
+.dayli-card{
+    display: block;
+    float: left;
+    width: 22%;
+    height: 130px;
+    border-radius: 5px;
+    background-color: rgb(240,243,250);
+    margin-right: 50px;
+    margin-top: 30px;
+
+
+}
+.dayli-card:hover{
+    background-color: rgb(225,227,240);
+}
+.last-day{
+    margin-right: 0px !important;
+}
+.card-title{
+    display: block;
+    width: 90%;
+    margin-top: 30px;
+    margin-left: 25px;
+    color:rgb(103,106,121);
+}
+.number , .percentage {
+    display: block;
+    width: 40%;
+    float: left;
+    margin-top: 20px;
+}
+.percentage{
+    width: 20%;
+    float: right;
+    text-align: end;
+    padding-right: 50px;
+    padding-top: 20px;
+    transform: scale(.8 , .8);
+}
+.img-right{
+    float: right;
+    padding-right: 40px;
+    height: 25px;
+}
+.number{
+
+margin-left: 25px;
+font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

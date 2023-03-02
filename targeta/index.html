@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+
+</head>
+  <!-- background -->
+<body>
+  <div id="body">
+
+
+<img id="background" src="images/bg-main-desktop.png" alt="">
+
+
+
+
+<div id="card">
+  <img id="card-front-img" src="images/bg-card-front.png" alt="">
+  <div id="info-card-front">
+    <img id="logo" src="images/card-logo.svg" alt="">
+    <div id="number-card"> 0000 0000 0000 0000</div>
+    <div id="name-card">Jane Appleseed</div>
+    <div id="date-card"><span id="month-card">00</span>/<span id="year-card">00</span></div>
+  </div>
+</div>
+
+
+<div id="card-back">
+  <img id="card-back-img" src="images/bg-card-back.png" alt="">
+  <div id="card-key">000</div>
+</div>
+
+  <!-- end-background -->
+
+  <!-- state start -->
+
+<div class="container" id="start">
+  <label for="name" class="tittles">Cardholder Name</label>
+  <input type="text" name="name" id="name" placeholder="e.g. Jane Appleseed" class="long-field field" oninput="fill()">
+
+  <label for="number" class="tittles">Card Number</label>
+  <input type="number" name="number" id="number" placeholder="e.g. 1234 5678 9123 0000" class="long-field field" oninput="fill()">
+  <div id="chine" class="parch"></div>
+
+<div class="left">
+  <label for="date" class="tittles">Exp. Date (MM/YY)</label>
+  <input type="number" min="0" max="99" name="date-one" id="month" placeholder="MM" class="cut-field field" oninput="fill()">
+  <input type="number" min="0" max="99" name="date-two" id="year" placeholder="YY" class="cut-field field" oninput="fill()">
+  <div class="advice dates" id="mmyy">Can't be blank</div>
+</div>
+
+<div class="right">
+  <label for="key" class="tittles">CVC</label>
+  <input type="number" name="key" id="key" placeholder="e.g. 123" class="medium-field field" oninput="fill()">
+  <div id="key-advice" class="advice dates">Can't be blank or Max 3 Numbers</div>
+</div>
+
+
+  <div class="button" onclick="confirmation()">Confirm</div>
+
+
+</div>
+
+    <!-- state end -->
+
+  <!-- Completed state start -->
+
+<div class="container" id="end">
+  <img src="images/icon-complete.svg" id="complete" alt="">
+  <div id="end-title">Thank you!</div>
+  <div id="end-subtitle">We've added your card details</div>
+  <div class="button" id="finally" onclick="tybtn()">Continue</div>
+</div>
+
+  <!-- Completed state end -->
+
+</div>
+  <script src="index.js"></script>
+</body>
+</html>
