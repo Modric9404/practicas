@@ -1,0 +1,133 @@
+body{
+    background-color: RGB(98,89,255);
+}
+#box{
+    display: block;
+    width: 1800px ;
+    height: 900px;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color:RGB(255,175,126);
+    overflow-y: scroll;
+}
+#box::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+.card{
+    display: block;
+    width: 560px;
+    height: 350px;
+    border-radius: 10px;
+    margin: 5px;
+    float: right;
+    background-color: RGB(255,255,255);
+    overflow: hidden;
+    font-family: 'Tilt Neon', cursive;
+}
+.left{
+    display: block;
+    float: left;
+    background-image: url("datos.svg");
+    background-position-y: -100px;
+    background-size: 100%;
+    padding: 10px;
+    height: 330px;
+    width: 200px;
+}
+.right{
+    display: block;
+    float: left;
+    background-color: RGB(255,255,255);
+    padding: 10px;
+    height: 330px;
+    width: 320px;
+}
+.left i{
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    border-radius: 30px;
+    border: 2px solid white;
+    margin-top: 10px;
+}
+.left .line{
+    display: block;
+    width: 200px;
+    height: 70px;
+    margin-top: 5px;
+    overflow: hidden;
+    color: white;
+}
+.left .text{
+display: block;
+font-size: 18px;
+width: 160px;
+height: 50px;
+float: right;
+margin-top: 12px;
+}
+.right .id{
+display: block;
+background-color: RGB(0,18,69);
+color: white;
+font-size: 30px;
+width: 50px;
+padding: 10px;
+border-radius: 10px;
+float: right;
+}
+.right .name{
+    display: block;
+    color: white;
+    font-size: 30px;
+    width: 220px;
+    height: 40px;
+    line-height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    float: left;
+    background-color: RGB(249,129,142);
+}
+.right .address{
+    display: block;
+    color: RGB(103,105,107);
+    font-size: 30px;
+    width: 300px;
+    height: 80px;
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    float: left;
+}
+.right .street, .right .suite{
+    display: block;
+    margin-top: 10px;
+    background-color: RGB(98,89,255);
+    color: white;
+    font-size: 20px;
+    width: 135px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    float: left; 
+}
+.right .street{
+    margin-right: 10px;
+    background-color: RGB(0,18,69);
+    }
+.right .city{
+display: block;
+margin-top: 10px;
+background-color: RGB(255,175,126);
+color: white;
+font-size: 35px;
+line-height: 50px;
+width: 300px;
+height: 50px;
+padding: 10px;
+border-radius: 10px;
+float: right;
+}
