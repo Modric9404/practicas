@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+</head>
+
+<body>
+
+  <div id="box">
+
+    <div id="text-left">
+
+      <div id="body-left">
+        <div class="color-low white center" id="title">Your Result</div>
+
+        <div class="white center" id="circle-purple">
+          <div id="big-text">
+            76
+          </div>
+          <div id="litle-text">
+            of 100
+          </div>
+        </div>
+
+        <div class="white center" id="body-left-st">Great</div>
+        <div class="white center" id="body-left-t">
+          You scored higher than 65% of the people who have taken these tests.
+        </div>
+      </div>
+
+    </div>
+
+    <div id="text-right">
+      <div id="body-right">
+        <div id="right-title">Summary</div>
+
+        <div id="siuuu">
+
+        </div>
+
+        <div id="continue" class="">
+          Continue
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    let conteo = [];
+    fetch('data.json')
+    .then(res => res.json())
+    .then(data => {
+     //console.log(data);
+      for(datos of data ){
+
+        document.getElementById('siuuu').innerHTML += `
+        <div class="clean-box">
+            <div class="gen" style="--txt: ${datos['color']} ;"></div>
+            <div class="general" style="--clr:${datos['bgColor']}; --txt:${datos['color']};">
+              <div class="left"><img src=" ${datos['icon']} " alt="">${datos['category']}</div>
+              <div class="right"> <span class="blue" id="${datos['category']}">${datos['score']}</span> <span class="other">/ 100</span></div>
+            </div>
+          </div>
+        `;
+
+       conteo.push(datos['score']);
+      }
+
+   //   console.log(conteo);
+        document.getElementById('big-text').innerHTML = parseInt((conteo.reduce((prev, curr) =>prev + curr, 0))/(conteo.length));
+
+    });
+  </script>
+
+</body>
+
+</html>
